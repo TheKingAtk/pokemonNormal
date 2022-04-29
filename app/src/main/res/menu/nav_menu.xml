@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="@string/p"
+            android:id="@+id/pokemon"
+            android:checked="true"/>
+        <item android:title="@string/types"
+            android:id="@+id/types"/>
+        <item android:title="@string/i"
+            android:id="@+id/item"/>
+        <item android:title="@string/pokemonRegions"
+            android:id="@+id/regions"/>
+        <item android:id="@+id/location"
+            android:title="@string/l"/>
+        <item android:id="@+id/fav"
+            android:title="@string/favourites"/>
+
+    </group>
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/sprite"
+        android:src="@drawable/land"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/sprite"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/pokemonName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:id="@+id/pokemonName"
+            android:transitionName="Common"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/pokemonId"
+            android:textSize="20sp"
+            android:id="@+id/pokemonId"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <Switch
+            android:id="@+id/fav"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:textOff="@string/add_to_favourites"
+            android:textOn="@string/favourite" />
+    </FrameLayout>
+</LinearLayout>
